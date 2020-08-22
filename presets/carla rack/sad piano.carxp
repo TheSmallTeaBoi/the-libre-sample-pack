@@ -1,0 +1,663 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE CARLA-PROJECT>
+<CARLA-PROJECT VERSION='2.0'>
+ <EngineSettings>
+  <ForceStereo>false</ForceStereo>
+  <PreferPluginBridges>false</PreferPluginBridges>
+  <PreferUiBridges>true</PreferUiBridges>
+  <UIsAlwaysOnTop>false</UIsAlwaysOnTop>
+  <MaxParameters>200</MaxParameters>
+  <UIBridgesTimeout>4000</UIBridgesTimeout>
+  <LADSPA_PATH>/home/theo/.ladspa:/usr/lib/ladspa:/usr/local/lib/ladspa</LADSPA_PATH>
+  <DSSI_PATH>/home/theo/.dssi:/usr/lib/dssi:/usr/local/lib/dssi</DSSI_PATH>
+  <LV2_PATH>/home/theo/.lv2:/usr/lib/lv2:/usr/local/lib/lv2</LV2_PATH>
+  <VST2_PATH>/home/theo/.vst:/usr/lib/vst:/usr/local/lib/vst</VST2_PATH>
+  <VST3_PATH>/home/theo/.vst3:/usr/lib/vst3:/usr/local/lib/vst3:/home/theo/.wine/drive_c/Program Files/Common Files/VST3:/home/theo/.wine/drive_c/Program Files (x86)/Common Files/VST3</VST3_PATH>
+  <SF2_PATH>/home/theo/.sounds/sf2/home/theo/.sounds/sf3:/usr/share/sounds/sf2:/usr/share/sounds/sf3:/usr/share/soundfonts</SF2_PATH>
+  <SFZ_PATH>/home/theo/.sounds/sfz:/usr/share/sounds/sfz</SFZ_PATH>
+ </EngineSettings>
+
+ <!-- Calf Compressor -->
+ <Plugin>
+  <Info>
+   <Type>LV2</Type>
+   <Name>Calf Compressor</Name>
+   <URI>http://calf.sourceforge.net/plugins/Compressor</URI>
+  </Info>
+
+  <Data>
+   <Active>Yes</Active>
+   <ControlChannel>1</ControlChannel>
+   <Options>0x3f1</Options>
+
+   <Parameter>
+    <Index>0</Index>
+    <Name>Bypass</Name>
+    <Symbol>bypass</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>1</Index>
+    <Name>Input</Name>
+    <Symbol>level_in</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>6</Index>
+    <Name>Threshold</Name>
+    <Symbol>threshold</Symbol>
+    <Value>0.076946534216404</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>7</Index>
+    <Name>Ratio</Name>
+    <Symbol>ratio</Symbol>
+    <Value>4.11847734451294</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>8</Index>
+    <Name>Attack</Name>
+    <Symbol>attack</Symbol>
+    <Value>9.30200958251953</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>9</Index>
+    <Name>Release</Name>
+    <Symbol>release</Symbol>
+    <Value>27.9041862487793</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>10</Index>
+    <Name>Makeup Gain</Name>
+    <Symbol>makeup</Symbol>
+    <Value>1.94530987739563</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>11</Index>
+    <Name>Knee</Name>
+    <Symbol>knee</Symbol>
+    <Value>4.37717437744141</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>12</Index>
+    <Name>Detection</Name>
+    <Symbol>detection</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>13</Index>
+    <Name>Stereo Link</Name>
+    <Symbol>stereo_link</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>15</Index>
+    <Name>Mix</Name>
+    <Symbol>mix</Symbol>
+    <Value>1</Value>
+   </Parameter>
+  </Data>
+ </Plugin>
+
+ <!-- Dragonfly Hall Reverb -->
+ <Plugin>
+  <Info>
+   <Type>LV2</Type>
+   <Name>Dragonfly Hall Reverb</Name>
+   <URI>https://github.com/michaelwillis/dragonfly-reverb</URI>
+  </Info>
+
+  <Data>
+   <Active>Yes</Active>
+   <ControlChannel>1</ControlChannel>
+   <Options>0x0</Options>
+
+   <Parameter>
+    <Index>0</Index>
+    <Name>Dry Level</Name>
+    <Symbol>dry_level</Symbol>
+    <Value>80</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>1</Index>
+    <Name>Early Level</Name>
+    <Symbol>early_level</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>2</Index>
+    <Name>Late Level</Name>
+    <Symbol>late_level</Symbol>
+    <Value>43.5582809448242</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>3</Index>
+    <Name>Size</Name>
+    <Symbol>size</Symbol>
+    <Value>60</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>4</Index>
+    <Name>Width</Name>
+    <Symbol>width</Symbol>
+    <Value>150</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>5</Index>
+    <Name>Predelay</Name>
+    <Symbol>delay</Symbol>
+    <Value>80</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>6</Index>
+    <Name>Diffuse</Name>
+    <Symbol>diffuse</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>7</Index>
+    <Name>Low Cut</Name>
+    <Symbol>low_cut</Symbol>
+    <Value>200</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>8</Index>
+    <Name>Low Cross</Name>
+    <Symbol>low_xo</Symbol>
+    <Value>1200</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>9</Index>
+    <Name>Low Mult</Name>
+    <Symbol>low_mult</Symbol>
+    <Value>0.5</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>10</Index>
+    <Name>High Cut</Name>
+    <Symbol>high_cut</Symbol>
+    <Value>1000</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>11</Index>
+    <Name>High Cross</Name>
+    <Symbol>high_xo</Symbol>
+    <Value>1750</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>12</Index>
+    <Name>High Mult</Name>
+    <Symbol>high_mult</Symbol>
+    <Value>1.20000004768372</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>13</Index>
+    <Name>Spin</Name>
+    <Symbol>spin</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>14</Index>
+    <Name>Wander</Name>
+    <Symbol>wander</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>15</Index>
+    <Name>Decay</Name>
+    <Symbol>decay</Symbol>
+    <Value>3.77499961853027</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>16</Index>
+    <Name>Early Send</Name>
+    <Symbol>early_send</Symbol>
+    <Value>17.7914047241211</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>17</Index>
+    <Name>Modulation</Name>
+    <Symbol>modulation</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <CustomData>
+    <Type>http://kxstudio.sf.net/ns/carla/property</Type>
+    <Key>CarlaSkinIsCompacted</Key>
+    <Value>false</Value>
+   </CustomData>
+
+   <CustomData>
+    <Type>http://lv2plug.in/ns/ext/atom#String</Type>
+    <Key>urn:distrho:preset</Key>
+    <Value>Small Clear Hall</Value>
+   </CustomData>
+  </Data>
+ </Plugin>
+
+ <!-- EQ10Q Stereo -->
+ <Plugin>
+  <Info>
+   <Type>LV2</Type>
+   <Name>EQ10Q Stereo</Name>
+   <URI>http://eq10q.sourceforge.net/eq/eq10qs</URI>
+  </Info>
+
+  <Data>
+   <Active>Yes</Active>
+   <ControlChannel>1</ControlChannel>
+   <Options>0x0</Options>
+
+   <Parameter>
+    <Index>0</Index>
+    <Name>Bypass</Name>
+    <Symbol>bypass</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>1</Index>
+    <Name>Input Gain</Name>
+    <Symbol>input_gain</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>2</Index>
+    <Name>Output Gain</Name>
+    <Symbol>output_gain</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>3</Index>
+    <Name>Filter 1 Gain</Name>
+    <Symbol>filter1_gain</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>4</Index>
+    <Name>Filter 2 Gain</Name>
+    <Symbol>filter2_gain</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>5</Index>
+    <Name>Filter 3 Gain</Name>
+    <Symbol>filter3_gain</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>6</Index>
+    <Name>Filter 4 Gain</Name>
+    <Symbol>filter4_gain</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>7</Index>
+    <Name>Filter 5 Gain</Name>
+    <Symbol>filter5_gain</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>8</Index>
+    <Name>Filter 6 Gain</Name>
+    <Symbol>filter6_gain</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>9</Index>
+    <Name>Filter 7 Gain</Name>
+    <Symbol>filter7_gain</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>10</Index>
+    <Name>Filter 8 Gain</Name>
+    <Symbol>filter8_gain</Symbol>
+    <Value>-2.45664739608765</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>11</Index>
+    <Name>Filter 9 Gain</Name>
+    <Symbol>filter9_gain</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>12</Index>
+    <Name>Filter 10 Gain</Name>
+    <Symbol>filter10_gain</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>13</Index>
+    <Name>Filter 1 Freq</Name>
+    <Symbol>filter1_freq</Symbol>
+    <Value>54.1971168518066</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>14</Index>
+    <Name>Filter 2 Freq</Name>
+    <Symbol>filter2_freq</Symbol>
+    <Value>60</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>15</Index>
+    <Name>Filter 3 Freq</Name>
+    <Symbol>filter3_freq</Symbol>
+    <Value>120</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>16</Index>
+    <Name>Filter 4 Freq</Name>
+    <Symbol>filter4_freq</Symbol>
+    <Value>240</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>17</Index>
+    <Name>Filter 5 Freq</Name>
+    <Symbol>filter5_freq</Symbol>
+    <Value>480</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>18</Index>
+    <Name>Filter 6 Freq</Name>
+    <Symbol>filter6_freq</Symbol>
+    <Value>960</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>19</Index>
+    <Name>Filter 7 Freq</Name>
+    <Symbol>filter7_freq</Symbol>
+    <Value>1920</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>20</Index>
+    <Name>Filter 8 Freq</Name>
+    <Symbol>filter8_freq</Symbol>
+    <Value>1959.77160644531</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>21</Index>
+    <Name>Filter 9 Freq</Name>
+    <Symbol>filter9_freq</Symbol>
+    <Value>7680</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>22</Index>
+    <Name>Filter 10 Freq</Name>
+    <Symbol>filter10_freq</Symbol>
+    <Value>15360</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>23</Index>
+    <Name>Filter 1 Q</Name>
+    <Symbol>filter1_q</Symbol>
+    <Value>0.624032199382782</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>24</Index>
+    <Name>Filter 2 Q</Name>
+    <Symbol>filter2_q</Symbol>
+    <Value>0.699999988079071</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>25</Index>
+    <Name>Filter 3 Q</Name>
+    <Symbol>filter3_q</Symbol>
+    <Value>2</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>26</Index>
+    <Name>Filter 4 Q</Name>
+    <Symbol>filter4_q</Symbol>
+    <Value>2</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>27</Index>
+    <Name>Filter 5 Q</Name>
+    <Symbol>filter5_q</Symbol>
+    <Value>2</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>28</Index>
+    <Name>Filter 6 Q</Name>
+    <Symbol>filter6_q</Symbol>
+    <Value>2</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>29</Index>
+    <Name>Filter 7 Q</Name>
+    <Symbol>filter7_q</Symbol>
+    <Value>2</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>30</Index>
+    <Name>Filter 8 Q</Name>
+    <Symbol>filter8_q</Symbol>
+    <Value>0.42808598279953</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>31</Index>
+    <Name>Filter 9 Q</Name>
+    <Symbol>filter9_q</Symbol>
+    <Value>0.699999988079071</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>32</Index>
+    <Name>Filter 10 Q</Name>
+    <Symbol>filter10_q</Symbol>
+    <Value>0.699999988079071</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>33</Index>
+    <Name>Filter 1 Type</Name>
+    <Symbol>filter1_type</Symbol>
+    <Value>8</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>34</Index>
+    <Name>Filter 2 Type</Name>
+    <Symbol>filter2_type</Symbol>
+    <Value>9</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>35</Index>
+    <Name>Filter 3 Type</Name>
+    <Symbol>filter3_type</Symbol>
+    <Value>11</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>36</Index>
+    <Name>Filter 4 Type</Name>
+    <Symbol>filter4_type</Symbol>
+    <Value>11</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>37</Index>
+    <Name>Filter 5 Type</Name>
+    <Symbol>filter5_type</Symbol>
+    <Value>11</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>38</Index>
+    <Name>Filter 6 Type</Name>
+    <Symbol>filter6_type</Symbol>
+    <Value>11</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>39</Index>
+    <Name>Filter 7 Type</Name>
+    <Symbol>filter7_type</Symbol>
+    <Value>11</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>40</Index>
+    <Name>Filter 8 Type</Name>
+    <Symbol>filter8_type</Symbol>
+    <Value>11</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>41</Index>
+    <Name>Filter 9 Type</Name>
+    <Symbol>filter9_type</Symbol>
+    <Value>10</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>42</Index>
+    <Name>Filter 10 Type</Name>
+    <Symbol>filter10_type</Symbol>
+    <Value>2</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>43</Index>
+    <Name>Filter 1 Enable</Name>
+    <Symbol>filter1_enable</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>44</Index>
+    <Name>Filter 2 Enable</Name>
+    <Symbol>filter2_enable</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>45</Index>
+    <Name>Filter 3 Enable</Name>
+    <Symbol>filter3_enable</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>46</Index>
+    <Name>Filter 4 Enable</Name>
+    <Symbol>filter4_enable</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>47</Index>
+    <Name>Filter 5 Enable</Name>
+    <Symbol>filter5_enable</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>48</Index>
+    <Name>Filter 6 Enable</Name>
+    <Symbol>filter6_enable</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>49</Index>
+    <Name>Filter 7 Enable</Name>
+    <Symbol>filter7_enable</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>50</Index>
+    <Name>Filter 8 Enable</Name>
+    <Symbol>filter8_enable</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>51</Index>
+    <Name>Filter 9 Enable</Name>
+    <Symbol>filter9_enable</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>52</Index>
+    <Name>Filter 10 Enable</Name>
+    <Symbol>filter10_enable</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>57</Index>
+    <Name>Mid Side Mode</Name>
+    <Symbol>midsidemode</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <CustomData>
+    <Type>http://kxstudio.sf.net/ns/carla/property</Type>
+    <Key>CarlaSkinIsCompacted</Key>
+    <Value>false</Value>
+   </CustomData>
+  </Data>
+ </Plugin>
+</CARLA-PROJECT>
