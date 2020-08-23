@@ -11,7 +11,7 @@ Because freedom is cool. Also because Linux music production is a bit bare in re
 
 ### **By who?**
 
-I am, actually, just an amateur teenager that likes Linux and music production.
+By Linux musicians, for Linux musicians.
 
 ---
 
@@ -31,7 +31,7 @@ You can contribute with samples or presets as long as they're yours and correctl
 ---
 
 ## **Important**
-Due to the nature of the project, I have little to no way of checking if all samples/presets are free to use, so all of it is based on the trust.
+Due to the nature of the project, I have little to no way of checking if all samples/presets are free to use, that's why we have the `trusted contributors` list: Anything uploaded by them is checked and double checked to be free to use.
 
 ---
 ## **License**
