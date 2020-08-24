@@ -36,19 +36,6 @@ You can contribute with samples or presets as long as they're yours and correctl
 
 ---
 
-## **Important**
-Due to the nature of the project, I have little to no way of checking if all samples/presets are free to use, that's why we have the `trusted contributors` list: Anything uploaded by them is checked and double checked to be free to use.
-
----
-
-## **Trusted Contributors**
-
-- teaboi (me)
-
-To be on this list, you will have to present some kind of proof that you actually made **all** of your sounds/presets on your own.
-
----
-
 ## **License**
 
 [CC-BY-SA-4.0](https://creativecommons.org/licenses/by-sa/4.0/)
