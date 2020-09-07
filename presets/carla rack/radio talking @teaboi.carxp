@@ -1,0 +1,973 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE CARLA-PROJECT>
+<CARLA-PROJECT VERSION='2.0'>
+ <EngineSettings>
+  <ForceStereo>false</ForceStereo>
+  <PreferPluginBridges>false</PreferPluginBridges>
+  <PreferUiBridges>true</PreferUiBridges>
+  <UIsAlwaysOnTop>false</UIsAlwaysOnTop>
+  <MaxParameters>200</MaxParameters>
+  <UIBridgesTimeout>4000</UIBridgesTimeout>
+  <LADSPA_PATH>/home/theo/.ladspa:/usr/lib/ladspa:/usr/local/lib/ladspa</LADSPA_PATH>
+  <DSSI_PATH>/home/theo/.dssi:/usr/lib/dssi:/usr/local/lib/dssi</DSSI_PATH>
+  <LV2_PATH>/home/theo/.lv2:/usr/lib/lv2:/usr/local/lib/lv2</LV2_PATH>
+  <VST2_PATH>/home/theo/.vst:/usr/lib/vst:/usr/local/lib/vst</VST2_PATH>
+  <VST3_PATH>/home/theo/.vst3:/usr/lib/vst3:/usr/local/lib/vst3:/home/theo/.wine/drive_c/Program Files/Common Files/VST3:/home/theo/.wine/drive_c/Program Files (x86)/Common Files/VST3</VST3_PATH>
+  <SF2_PATH>/home/theo/.sounds/sf2/home/theo/.sounds/sf3:/usr/share/sounds/sf2:/usr/share/sounds/sf3:/usr/share/soundfonts</SF2_PATH>
+  <SFZ_PATH>/home/theo/.sounds/sfz:/usr/share/sounds/sfz</SFZ_PATH>
+ </EngineSettings>
+
+ <!-- Calf Compressor -->
+ <Plugin>
+  <Info>
+   <Type>LV2</Type>
+   <Name>Calf Compressor</Name>
+   <URI>http://calf.sourceforge.net/plugins/Compressor</URI>
+  </Info>
+
+  <Data>
+   <Active>Yes</Active>
+   <ControlChannel>1</ControlChannel>
+   <Options>0x3f1</Options>
+
+   <Parameter>
+    <Index>0</Index>
+    <Name>Bypass</Name>
+    <Symbol>bypass</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>1</Index>
+    <Name>Input</Name>
+    <Symbol>level_in</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>6</Index>
+    <Name>Threshold</Name>
+    <Symbol>threshold</Symbol>
+    <Value>0.00390625093132257</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>7</Index>
+    <Name>Ratio</Name>
+    <Symbol>ratio</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>8</Index>
+    <Name>Attack</Name>
+    <Symbol>attack</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>9</Index>
+    <Name>Release</Name>
+    <Symbol>release</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>10</Index>
+    <Name>Makeup Gain</Name>
+    <Symbol>makeup</Symbol>
+    <Value>2.41496109962463</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>11</Index>
+    <Name>Knee</Name>
+    <Symbol>knee</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>12</Index>
+    <Name>Detection</Name>
+    <Symbol>detection</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>13</Index>
+    <Name>Stereo Link</Name>
+    <Symbol>stereo_link</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>15</Index>
+    <Name>Mix</Name>
+    <Symbol>mix</Symbol>
+    <Value>1</Value>
+   </Parameter>
+  </Data>
+ </Plugin>
+
+ <!-- LSP Gate Stereo -->
+ <Plugin>
+  <Info>
+   <Type>LV2</Type>
+   <Name>LSP Gate Stereo</Name>
+   <URI>http://lsp-plug.in/plugins/lv2/gate_stereo</URI>
+  </Info>
+
+  <Data>
+   <Active>Yes</Active>
+   <ControlChannel>1</ControlChannel>
+   <Options>0x1</Options>
+
+   <Parameter>
+    <Index>0</Index>
+    <Name>Enabled</Name>
+    <Symbol>enabled</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>1</Index>
+    <Name>Input gain</Name>
+    <Symbol>g_in</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>2</Index>
+    <Name>Output gain</Name>
+    <Symbol>g_out</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>3</Index>
+    <Name>Pause graph analysis</Name>
+    <Symbol>pause</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>4</Index>
+    <Name>Clear graph analysis</Name>
+    <Symbol>clear</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>5</Index>
+    <Name>Sidechain mode</Name>
+    <Symbol>scm</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>6</Index>
+    <Name>Sidechain lookahead</Name>
+    <Symbol>sla</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>7</Index>
+    <Name>Sidechain listen</Name>
+    <Symbol>scl</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>8</Index>
+    <Name>Sidechain source</Name>
+    <Symbol>scs</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>9</Index>
+    <Name>Sidechain reactivity</Name>
+    <Symbol>scr</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>10</Index>
+    <Name>Sidechain preamp</Name>
+    <Symbol>scp</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>11</Index>
+    <Name>High-pass filter mode</Name>
+    <Symbol>shpm</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>12</Index>
+    <Name>High-pass filter frequency</Name>
+    <Symbol>shpf</Symbol>
+    <Value>10</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>13</Index>
+    <Name>Low-pass filter mode</Name>
+    <Symbol>slpm</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>14</Index>
+    <Name>Low-pass filter frequency</Name>
+    <Symbol>slpf</Symbol>
+    <Value>10</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>15</Index>
+    <Name>Hysteresis</Name>
+    <Symbol>gh</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>16</Index>
+    <Name>Curve threshold</Name>
+    <Symbol>gt</Symbol>
+    <Value>0.0406748056411743</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>17</Index>
+    <Name>Curve zone size</Name>
+    <Symbol>gz</Symbol>
+    <Value>0.105180971324444</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>18</Index>
+    <Name>Hysteresis threshold</Name>
+    <Symbol>ht</Symbol>
+    <Value>0.120826974511147</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>19</Index>
+    <Name>Hysteresis zone size</Name>
+    <Symbol>hz</Symbol>
+    <Value>0.127847835421562</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>20</Index>
+    <Name>Attack</Name>
+    <Symbol>at</Symbol>
+    <Value>0.0487803034484386</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>21</Index>
+    <Name>Release</Name>
+    <Symbol>rt</Symbol>
+    <Value>11.391131401062</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>22</Index>
+    <Name>Reduction</Name>
+    <Symbol>gr</Symbol>
+    <Value>0.000251190009294078</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>23</Index>
+    <Name>Makeup gain</Name>
+    <Symbol>mk</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>24</Index>
+    <Name>Dry gain</Name>
+    <Symbol>cdr</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>25</Index>
+    <Name>Wet gain</Name>
+    <Symbol>cwt</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>26</Index>
+    <Name>Sidechain level visibility</Name>
+    <Symbol>slv</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>27</Index>
+    <Name>Envelope level visibility</Name>
+    <Symbol>elv</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>28</Index>
+    <Name>Gain reduction visibility</Name>
+    <Symbol>grv</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>36</Index>
+    <Name>Input level visibility Left</Name>
+    <Symbol>ilv_l</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>37</Index>
+    <Name>Output level visibility Left</Name>
+    <Symbol>olv_l</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>40</Index>
+    <Name>Input level visibility Right</Name>
+    <Symbol>ilv_r</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>41</Index>
+    <Name>Output level visibility Right</Name>
+    <Symbol>olv_r</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <CustomData>
+    <Type>http://kxstudio.sf.net/ns/carla/property</Type>
+    <Key>CarlaSkinIsCompacted</Key>
+    <Value>false</Value>
+   </CustomData>
+  </Data>
+ </Plugin>
+
+ <!-- Valve saturation -->
+ <Plugin>
+  <Info>
+   <Type>LADSPA</Type>
+   <Name>Valve saturation</Name>
+   <Binary>/usr/lib/ladspa/valve_1209.so</Binary>
+   <Label>valve</Label>
+   <UniqueID>1209</UniqueID>
+  </Info>
+
+  <Data>
+   <Active>Yes</Active>
+   <ControlChannel>1</ControlChannel>
+   <Options>0x0</Options>
+
+   <Parameter>
+    <Index>0</Index>
+    <Name>Distortion level</Name>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>1</Index>
+    <Name>Distortion character</Name>
+    <Value>0</Value>
+   </Parameter>
+  </Data>
+ </Plugin>
+
+ <!-- EQ1Q Stereo -->
+ <Plugin>
+  <Info>
+   <Type>LV2</Type>
+   <Name>EQ1Q Stereo</Name>
+   <URI>http://eq10q.sourceforge.net/eq/eq1qs</URI>
+  </Info>
+
+  <Data>
+   <Active>Yes</Active>
+   <ControlChannel>1</ControlChannel>
+   <Options>0x0</Options>
+
+   <Parameter>
+    <Index>0</Index>
+    <Name>Bypass</Name>
+    <Symbol>bypass</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>1</Index>
+    <Name>Input Gain</Name>
+    <Symbol>input_gain</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>2</Index>
+    <Name>Output Gain</Name>
+    <Symbol>output_gain</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>3</Index>
+    <Name>Filter 1 Gain</Name>
+    <Symbol>filter1_gain</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>4</Index>
+    <Name>Filter 1 Freq</Name>
+    <Symbol>filter1_freq</Symbol>
+    <Value>20</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>5</Index>
+    <Name>Filter 1 Q</Name>
+    <Symbol>filter1_q</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>6</Index>
+    <Name>Filter 1 Type</Name>
+    <Symbol>filter1_type</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>7</Index>
+    <Name>Filter 1 Enable</Name>
+    <Symbol>filter1_enable</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>12</Index>
+    <Name>Mid Side Mode</Name>
+    <Symbol>midsidemode</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <CustomData>
+    <Type>http://kxstudio.sf.net/ns/carla/property</Type>
+    <Key>CarlaSkinIsCompacted</Key>
+    <Value>false</Value>
+   </CustomData>
+  </Data>
+ </Plugin>
+
+ <!-- EQ4Q Stereo -->
+ <Plugin>
+  <Info>
+   <Type>LV2</Type>
+   <Name>EQ4Q Stereo</Name>
+   <URI>http://eq10q.sourceforge.net/eq/eq4qs</URI>
+  </Info>
+
+  <Data>
+   <Active>Yes</Active>
+   <ControlChannel>1</ControlChannel>
+   <Options>0x0</Options>
+
+   <Parameter>
+    <Index>0</Index>
+    <Name>Bypass</Name>
+    <Symbol>bypass</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>1</Index>
+    <Name>Input Gain</Name>
+    <Symbol>input_gain</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>2</Index>
+    <Name>Output Gain</Name>
+    <Symbol>output_gain</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>3</Index>
+    <Name>Filter 1 Gain</Name>
+    <Symbol>filter1_gain</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>4</Index>
+    <Name>Filter 2 Gain</Name>
+    <Symbol>filter2_gain</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>5</Index>
+    <Name>Filter 3 Gain</Name>
+    <Symbol>filter3_gain</Symbol>
+    <Value>8.95953750610352</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>6</Index>
+    <Name>Filter 4 Gain</Name>
+    <Symbol>filter4_gain</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>7</Index>
+    <Name>Filter 1 Freq</Name>
+    <Symbol>filter1_freq</Symbol>
+    <Value>124.916641235352</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>8</Index>
+    <Name>Filter 2 Freq</Name>
+    <Symbol>filter2_freq</Symbol>
+    <Value>20</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>9</Index>
+    <Name>Filter 3 Freq</Name>
+    <Symbol>filter3_freq</Symbol>
+    <Value>1123.54235839844</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>10</Index>
+    <Name>Filter 4 Freq</Name>
+    <Symbol>filter4_freq</Symbol>
+    <Value>6492.91650390625</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>11</Index>
+    <Name>Filter 1 Q</Name>
+    <Symbol>filter1_q</Symbol>
+    <Value>0.699999988079071</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>12</Index>
+    <Name>Filter 2 Q</Name>
+    <Symbol>filter2_q</Symbol>
+    <Value>0.699999988079071</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>13</Index>
+    <Name>Filter 3 Q</Name>
+    <Symbol>filter3_q</Symbol>
+    <Value>0.480199992656708</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>14</Index>
+    <Name>Filter 4 Q</Name>
+    <Symbol>filter4_q</Symbol>
+    <Value>0.699999988079071</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>15</Index>
+    <Name>Filter 1 Type</Name>
+    <Symbol>filter1_type</Symbol>
+    <Value>8</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>16</Index>
+    <Name>Filter 2 Type</Name>
+    <Symbol>filter2_type</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>17</Index>
+    <Name>Filter 3 Type</Name>
+    <Symbol>filter3_type</Symbol>
+    <Value>11</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>18</Index>
+    <Name>Filter 4 Type</Name>
+    <Symbol>filter4_type</Symbol>
+    <Value>4</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>19</Index>
+    <Name>Filter 1 Enable</Name>
+    <Symbol>filter1_enable</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>20</Index>
+    <Name>Filter 2 Enable</Name>
+    <Symbol>filter2_enable</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>21</Index>
+    <Name>Filter 3 Enable</Name>
+    <Symbol>filter3_enable</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>22</Index>
+    <Name>Filter 4 Enable</Name>
+    <Symbol>filter4_enable</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>27</Index>
+    <Name>Mid Side Mode</Name>
+    <Symbol>midsidemode</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <CustomData>
+    <Type>http://kxstudio.sf.net/ns/carla/property</Type>
+    <Key>CarlaSkinIsCompacted</Key>
+    <Value>false</Value>
+   </CustomData>
+  </Data>
+ </Plugin>
+
+ <!-- Calf Ring Modulator -->
+ <Plugin>
+  <Info>
+   <Type>LV2</Type>
+   <Name>Calf Ring Modulator</Name>
+   <URI>http://calf.sourceforge.net/plugins/RingModulator</URI>
+  </Info>
+
+  <Data>
+   <Active>Yes</Active>
+   <ControlChannel>1</ControlChannel>
+   <Options>0x3f1</Options>
+
+   <Parameter>
+    <Index>0</Index>
+    <Name>Bypass</Name>
+    <Symbol>bypass</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>1</Index>
+    <Name>Input Gain</Name>
+    <Symbol>level_in</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>2</Index>
+    <Name>Output Gain</Name>
+    <Symbol>level_out</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>11</Index>
+    <Name>Modulator</Name>
+    <Symbol>mod_mode</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>12</Index>
+    <Name>Mod Freq</Name>
+    <Symbol>mod_freq</Symbol>
+    <Value>2607.08520507812</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>13</Index>
+    <Name>Mod Amount</Name>
+    <Symbol>mod_amount</Symbol>
+    <Value>0.163999989628792</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>14</Index>
+    <Name>Mod Phase</Name>
+    <Symbol>mod_phase</Symbol>
+    <Value>0.5</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>15</Index>
+    <Name>Mod Detune</Name>
+    <Symbol>mod_detune</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>16</Index>
+    <Name>Listen</Name>
+    <Symbol>mod_listen</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>17</Index>
+    <Name>LFO 1</Name>
+    <Symbol>lfo1_mode</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>18</Index>
+    <Name>LFO 1 Freq</Name>
+    <Symbol>lfo1_freq</Symbol>
+    <Value>0.105903998017311</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>19</Index>
+    <Name>Reset 1</Name>
+    <Symbol>lfo1_reset</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>20</Index>
+    <Name>Mod Freq LO</Name>
+    <Symbol>lfo1_mod_freq_lo</Symbol>
+    <Value>1262.01257324219</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>21</Index>
+    <Name>Mod Freq HI</Name>
+    <Symbol>lfo1_mod_freq_hi</Symbol>
+    <Value>1493.48974609375</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>22</Index>
+    <Name>Mod Freq Active</Name>
+    <Symbol>lfo1_mod_freq_active</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>23</Index>
+    <Name>Mod Detune LO</Name>
+    <Symbol>lfo1_mod_detune_lo</Symbol>
+    <Value>-40.8000030517578</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>24</Index>
+    <Name>Mod Detune HI</Name>
+    <Symbol>lfo1_mod_detune_hi</Symbol>
+    <Value>40.8000030517578</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>25</Index>
+    <Name>Mod Detune Active</Name>
+    <Symbol>lfo1_mod_detune_active</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>27</Index>
+    <Name>LFO 2</Name>
+    <Symbol>lfo2_mode</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>28</Index>
+    <Name>LFO 2 Freq</Name>
+    <Symbol>lfo2_freq</Symbol>
+    <Value>0.200000002980232</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>29</Index>
+    <Name>Reset 2</Name>
+    <Symbol>lfo2_reset</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>30</Index>
+    <Name>LFO Freq LO</Name>
+    <Symbol>lfo2_lfo1_freq_lo</Symbol>
+    <Value>0.0500000007450581</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>31</Index>
+    <Name>LFO Freq HI</Name>
+    <Symbol>lfo2_lfo1_freq_hi</Symbol>
+    <Value>0.5</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>32</Index>
+    <Name>LFO 1 Freq Active</Name>
+    <Symbol>lfo2_lfo1_freq_active</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>33</Index>
+    <Name>Mod Amount LO</Name>
+    <Symbol>lfo2_mod_amount_lo</Symbol>
+    <Value>0.300000011920929</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>34</Index>
+    <Name>Mod Amount HI</Name>
+    <Symbol>lfo2_mod_amount_hi</Symbol>
+    <Value>0.600000023841858</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>35</Index>
+    <Name>Mod Amount Active</Name>
+    <Symbol>lfo2_mod_amount_active</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <CustomData>
+    <Type>http://kxstudio.sf.net/ns/carla/property</Type>
+    <Key>CarlaSkinIsCompacted</Key>
+    <Value>false</Value>
+   </CustomData>
+  </Data>
+ </Plugin>
+
+ <!-- Calf Compressor -->
+ <Plugin>
+  <Info>
+   <Type>LV2</Type>
+   <Name>Calf Compressor (2)</Name>
+   <URI>http://calf.sourceforge.net/plugins/Compressor</URI>
+  </Info>
+
+  <Data>
+   <Active>Yes</Active>
+   <ControlChannel>1</ControlChannel>
+   <Options>0x3f1</Options>
+
+   <Parameter>
+    <Index>0</Index>
+    <Name>Bypass</Name>
+    <Symbol>bypass</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>1</Index>
+    <Name>Input</Name>
+    <Symbol>level_in</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>6</Index>
+    <Name>Threshold</Name>
+    <Symbol>threshold</Symbol>
+    <Value>0.00195312546566129</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>7</Index>
+    <Name>Ratio</Name>
+    <Symbol>ratio</Symbol>
+    <Value>2</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>8</Index>
+    <Name>Attack</Name>
+    <Symbol>attack</Symbol>
+    <Value>0.513713479042053</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>9</Index>
+    <Name>Release</Name>
+    <Symbol>release</Symbol>
+    <Value>2.94012022018433</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>10</Index>
+    <Name>Makeup Gain</Name>
+    <Symbol>makeup</Symbol>
+    <Value>3.78423070907593</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>11</Index>
+    <Name>Knee</Name>
+    <Symbol>knee</Symbol>
+    <Value>2.82842993736267</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>12</Index>
+    <Name>Detection</Name>
+    <Symbol>detection</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>13</Index>
+    <Name>Stereo Link</Name>
+    <Symbol>stereo_link</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>15</Index>
+    <Name>Mix</Name>
+    <Symbol>mix</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <CustomData>
+    <Type>http://kxstudio.sf.net/ns/carla/property</Type>
+    <Key>CarlaSkinIsCompacted</Key>
+    <Value>false</Value>
+   </CustomData>
+  </Data>
+ </Plugin>
+</CARLA-PROJECT>
