@@ -1,5 +1,5 @@
 <!DOCTYPE ZynAddSubFX-data>
-<ZynAddSubFX-data version-minor="4" version-revision="1" ZynAddSubFX-author="Nasca Octavian Paul" version-major="2">
+<ZynAddSubFX-data version-major="2" version-revision="1" version-minor="4" ZynAddSubFX-author="Nasca Octavian Paul">
  <INFORMATION/>
  <BASE_PARAMETERS>
   <par name="max_midi_parts" value="16"/>
@@ -30,9 +30,9 @@
     <ADD_SYNTH_PARAMETERS>
      <par_bool name="stereo" value="no"/>
      <AMPLITUDE_PARAMETERS>
-      <par name="volume" value="89"/>
+      <par name="volume" value="100"/>
       <par name="panning" value="64"/>
-      <par name="velocity_sensing" value="96"/>
+      <par name="velocity_sensing" value="127"/>
       <par name="punch_strength" value="0"/>
       <par name="punch_time" value="60"/>
       <par name="punch_stretch" value="64"/>
@@ -98,7 +98,7 @@
       </FREQUENCY_LFO>
      </FREQUENCY_PARAMETERS>
      <FILTER_PARAMETERS>
-      <par name="velocity_sensing_amplitude" value="27"/>
+      <par name="velocity_sensing_amplitude" value="0"/>
       <par name="velocity_sensing" value="64"/>
       <FILTER>
        <par name="category" value="0"/>
