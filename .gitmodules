@@ -1,0 +1,3 @@
+[submodule "presets/helm/patches@reis0"]
+	path = presets/helm/patches@reis0
+	url = https://gitlab.com/REIS0/reis0-patches
