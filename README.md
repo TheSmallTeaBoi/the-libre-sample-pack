@@ -38,7 +38,7 @@ You can contribute with samples or presets as long as they're yours and correctl
 
 ## **License**
 
-[CC-BY-SA-4.0](https://creativecommons.org/licenses/by-sa/4.0/)
+[CC0](https://creativecommons.org/share-your-work/public-domain/cc0/)
 
 ---
 
