@@ -19,7 +19,7 @@ By Linux musicians, for Linux musicians.
 
 Open your nice, warm, and comfy teminal and type (Or copy paste).
 
-> git clone https://github.com/TheSmallTeaBoi/the-libre-sample-pack
+`git clone https://github.com/TheSmallTeaBoi/the-libre-sample-pack`
 
 That should create a folder on your home directory called *the-libre-sample-pack* with all the goodies.
 
