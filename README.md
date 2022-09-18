@@ -12,19 +12,20 @@ Because freedom is cool. Also because FOSS music production is a bit bare in res
 
 ### **By who?**
 
-By Linux musicians, for Linux musicians.
+By Linux musicians / FOSS enthusiasts, for everyone.
 
 ---
 
 ### **How to download**
 
-Open your nice, warm, and comfy teminal and type (Or copy paste).
+1. Open your nice, warm, and comfy teminal and type (Or copy paste).
 
 `git clone https://github.com/TheSmallTeaBoi/the-libre-sample-pack`
 
 That should create a folder on your home directory called *the-libre-sample-pack* with all the goodies.
 
-OR click the green </> button and download zip and extract to your sample directory!
+2. OR click the green </> button and download zip and extract to your sample directory!
+
 ---
 
 ## **To contribute**
