@@ -1,13 +1,14 @@
 # **The Libre Sample Pack**
-##### *A free sample pack*
+##### *A free (as in free beer and free speech) sample pack*
 ---
 ## **What is this?**
 
 It is a free (as in freedom) and collaborative sample and preset pack, a bit more intended for Linux musicians, since all presets will be for Linux plugins.
+(not exclusively for linux musicians or hosts of course!)
 
 ### **Why?**
 
-Because freedom is cool. Also because Linux music production is a bit bare in resources regards and it would be nice to change that.
+Because freedom is cool. Also because FOSS music production is a bit bare in resources and it would be nice to change that.
 
 ### **By who?**
 
@@ -23,10 +24,12 @@ Open your nice, warm, and comfy teminal and type (Or copy paste).
 
 That should create a folder on your home directory called *the-libre-sample-pack* with all the goodies.
 
+OR click the green </> button and download zip and extract to your sample directory!
 ---
 
 ## **To contribute**
 You can contribute with samples or presets as long as they're yours and correctly organized and formatted.
+All contributions will be licensed under [CC0](https://creativecommons.org/share-your-work/public-domain/cc0/)
 
 ### Formatting
 
